@@ -1,0 +1,41 @@
+{
+	"name": "@apps/fastify",
+	"private": true,
+	"bin": {
+		"fastify-generate-openapi": "./.fastify/scripts/generate-openapi.js"
+	},
+	"scripts": {
+		"build": "node ./scripts/build.mjs",
+		"dev": "tsx watch ./src/index.ts",
+		"database:generate": "drizzle-kit generate --config=./drizzle.config.ts",
+		"database:push": "drizzle-kit push",
+		"generate-openapi": "node ./.fastify/scripts/generate-openapi.js",
+		"generate-openapi:yaml": "npm run generate-openapi -- --yaml",
+		"postinstall": "npm run build",
+		"start": "node ./.fastify/index.js",
+		"test": "node --test ./.fastify/__tests__/*.test.js"
+	},
+	"dependencies": {
+		"@fastify/cors": "^11.2.0",
+		"@fastify/env": "6.0.0",
+		"@fastify/postgres": "6.0.2",
+		"@fastify/swagger": "9.7.0",
+		"@modules/model-type": "workspace:*",
+		"@scalar/fastify-api-reference": "1.51.0",
+		"argparse": "^2.0.1",
+		"dotenv": "17.4.1",
+		"drizzle-orm": "0.45.2",
+		"drizzle-typebox": "^0.3.3",
+		"fastify": "5.8.4",
+		"pg": "8.20.0",
+		"typebox": "1.1.16"
+	},
+	"devDependencies": {
+		"@types/argparse": "^2.0.17",
+		"@types/json-schema": "^7.0.15",
+		"@types/pg": "8.20.0",
+		"drizzle-kit": "0.31.10",
+		"esbuild": "0.28.0",
+		"tsx": "4.21.0"
+	}
+}

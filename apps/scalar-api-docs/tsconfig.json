@@ -1,0 +1,19 @@
+{
+	"extends": "../../tsconfig.base",
+	"compilerOptions": {
+		"jsx": "react-jsx",
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"paths": {
+			"@/*": [
+				"./src/*"
+			]
+		},
+		"target": "esnext"
+	},
+	"include": [
+		"./next-env.d.ts",
+		"./next.config.ts",
+		"./src/**/*"
+	]
+}

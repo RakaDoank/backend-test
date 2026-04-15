@@ -1,0 +1,14 @@
+{
+	"files": [],
+	"references": [
+		{
+			"path": "./apps/fastify"
+		},
+		{
+			"path": "./apps/scalar-api-docs"
+		},
+		{
+			"path": "./modules/model-type"
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"name": "@modules/model-type",
+	"private": true,
+	"exports": {
+		".": "./src/index.ts"
+	},
+	"devDependencies": {
+		"typescript": "catalog:"
+	}
+}

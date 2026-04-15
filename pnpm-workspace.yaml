@@ -1,0 +1,10 @@
+catalog:
+  'typescript': 5.9.3
+
+engineStrict: true
+
+packages:
+  - apps/*
+  - modules/*
+
+nodeLinker: hoisted

@@ -1,0 +1,36 @@
+{
+	"name": "backend-test",
+	"private": true,
+	"scripts": {
+		"code-check": "npm run type-check && npm run lint",
+		"fastify-generate-openapi": "fastify-generate-openapi --out-dir ./",
+		"fastify-generate-openapi:yaml": "npm run fastify-generate-openapi -- --yaml",
+		"lint": "eslint .",
+		"preinstall": "only-allow pnpm",
+		"pnpm-clean-install": "node ./scripts/pnpm-clean-install.mjs",
+		"type-check": "tsc --build"
+	},
+	"devDependencies": {
+		"@apps/fastify": "workspace:*",
+		"@eslint/compat": "2.0.3",
+		"@stylistic/eslint-plugin": "5.10.0",
+		"@types/color": "4.2.1",
+		"@types/node": "^24",
+		"@types/react": "19.2.14",
+		"@types/react-dom": "19.2.3",
+		"@types/react-native-web": "0.19.2",
+		"eslint": "9.39.4",
+		"eslint-config-next": "16.2.2",
+		"eslint-import-resolver-typescript": "4.4.4",
+		"eslint-plugin-import-x": "4.16.2",
+		"fastify-cli": "8.0.0",
+		"globals": "^17.4.0",
+		"only-allow": "^1.2.2",
+		"typescript": "5.9.3",
+		"typescript-eslint": "8.57.1"
+	},
+	"engines": {
+		"node": ">=24",
+		"pnpm": ">=10.30"
+	}
+}

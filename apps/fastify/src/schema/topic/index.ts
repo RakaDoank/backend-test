@@ -1,0 +1,3 @@
+export {
+	Topic,
+} from "./topic"

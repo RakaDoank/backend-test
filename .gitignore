@@ -1,0 +1,26 @@
+# OSX
+#
+.DS_Store
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Next.js
+next-env.d.ts
+/apps/scalar-api-docs/.next/
+
+# Fastify (transpiled files)
+/apps/fastify/.fastify/
+
+# TypeScript
+tsconfig.tsbuildinfo
+
+# Generated OpenAPI schema file
+/openapi.json
+/openapi.yaml
+
+# ENVs
+.env
